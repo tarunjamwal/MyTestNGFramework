@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Cases" verbose="1">
+
+    <test name="Verify user able to login.">
+        <parameter name="browserName" value="chrome"></parameter>
+        <classes>
+            <class name="com.examples.Tests.TestLogin"/>
+        </classes>
+
+        <listeners>
+            <listener class-name="Reports.Listener"/>
+        </listeners>
+    </test>
+
+    <test name="Verify product added to cart">
+            <parameter name="browserName" value="chrome"></parameter>
+            <classes>
+                <class name="com.examples.Tests.TestProduct"/>
+            </classes>
+
+            <listeners>
+                <listener class-name="Reports.Listener"/>
+            </listeners>
+        </test>
+
+
+</suite>
