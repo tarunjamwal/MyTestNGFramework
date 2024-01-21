@@ -41,12 +41,12 @@ public class BasePage {
             e.printStackTrace();
         }
     }
-//
-//    @AfterClass
-//    public static void Close() {
-//        if (driver != null) {
-//            driver.quit();
-//        }
-//    }
+
+    @AfterClass
+    public static void Close() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 }
 
